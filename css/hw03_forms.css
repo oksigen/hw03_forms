@@ -1,0 +1,31 @@
+fieldset {
+	width: 650px;
+}
+legend {
+	font-weight: bold;
+}
+.textBold {
+	font-weight: bold;
+	margin-top: 10px;
+    margin-bottom: 3px;
+}
+.space{
+	margin-top: 10px;
+}
+.age {
+	width: 50px;
+}
+.long {
+	width: 250px;
+}
+body {
+	background: lightgray;
+}
+.main {
+	width: 680px;
+	background: white;
+	padding: 30px 80px;
+	margin: auto;
+	border-radius: 15px;
+}
+

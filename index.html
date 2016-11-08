@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  	<meta charset="utf-8">
+  	<title>Home work 3. Forms</title>
+  	<link rel="stylesheet" type="text/css" href="css/hw03_forms.css">
+  </head>
+  <body>
+    <div class="main">
+      <header>
+	  	<h1>Урок "Формы": теги и их атрибуты.</h1>
+	  	<h2>Расскажите немного о себе...</h2>
+	  	  <p>Попробуйте создать аналогичную форму. Для целей демонстрации вполне подойдут и вымышленные</p>
+	  </header>
+	  	<form action="#" method="POST">
+	  	  <fieldset>
+	  	  	<legend>Коротко о себе</legend>
+	  	  	  <p> Имя: <input class="long" type="text" name="firstname"/><br>
+	  	          Фамилия: <input class="space long" type="text" name="lastname"/> <br>
+	  	          Пол: <input class="space" type="radio" name="sex" value="male" checked="checked" />мужской
+	  	          	   <input type="radio" name="sex" value="female"/>женский <br>
+	  	          Возраст: <input class="space age" type="text" name="age"/> лет</p>
+	  	  </fieldset><br>
+	  	  <fieldset>
+	  	  	<legend>Подробнее о себе</legend>
+	  	  	  <input type="radio" name="youngManOrGirl" value="youngMan" checked="checked"/>Молодой человек<br>
+	  	  	  <input type="radio" name="youngManOrGirl" value="girl"/>Девушка<br>
+	  	  	  <input type="text" name="birthday"/> Дата рождения<br>
+	  	  	  <input type="text" name="maritalStatus"/> Семейное положение<br>
+	  	  	  <input type="text" name="socialStatus"/> Социальный статус<br>
+	  	  	  <input type="text" name="location"/> Местожительство<br>
+	  	  	  <p class="textBold">Что вы обычно делаете на выходных:</p>
+	  	  	  <input type="checkbox" name="weekend" value="Сплю"/>Сплю<br>
+	  	  	  <input type="checkbox" name="weekend" value="Гуляю с друзями"/>Гуляю с друзями<br>
+	  	  	  <input type="checkbox" name="weekend" value="Хожу на рыбалку"/>Хожу на рыбалку<br>
+	  	  	  <input type="checkbox" name="weekend" value="Играю в игры"/>Играю в игры<br>
+	  	  	  <p class="textBold">Рассказать о формах в книге, посвященной HTML:</p>
+	  	  	  <select name="book">
+	  	  	  	<option value="siteFrequency">Site frequency</option>
+	  	  	  	<option value="htmlcss">HTML и CSS</option>
+	  	  	  	<option value="html5">HTML 5</option>
+	  	  	  </select>
+	  	  	  <p class="textBold">Сколько книг вы прочитали за свою жизнь?</p>
+	  	  	  <input type="radio" name="books" value="0-10"/>0-10<br>
+	  	  	  <input type="radio" name="books" value="11-20"/>11-20<br>
+	  	  	  <input type="radio" name="books" value="21-50"/>21-50<br>
+	  	  	  <input type="radio" name="books" value="50+"/>50+<br>
+	  	  	  <p class="textBold">Ваши комментарии:</p>
+	  	  	  <textarea name="comments" rows="10" cols="50"></textarea><br>
+	  	  	  <select class="space" name="position" multiple size="3">
+	  	  	  	<option value="first">Первая позиция</option>
+	  	  	  	<option value="second">Вторая позиция</option>
+	  	  	  	<option value="third">Третья позиция</option>
+	  	  	  </select>
+	  	  </fieldset><br>
+	  	  <fieldset>
+	  	  	<legend>И в заключении</legend>
+	  	  	<input class="long" type="text" name="conclusion" value="Это поле было введено до вас" disabled/>
+	  	  	<p class="textBold">Email:</p>
+	  	  	<input class="long" type="email"/>
+	  	  	<p><strong>Хотите подписаться на самую модную рассылку спама?</strong><br>
+	  	  	<em>Выберите категории</em></p>
+	  	  	<input type="checkbox" name="spam" value="equipment"/>Оборудование<br>
+	  	  	<input type="checkbox" name="spam" value="dinner"/>Как приготовить обеды<br>
+	  	  	<input type="checkbox" name="spam" value="million"/>Заработай миллион за два дня!
+	  	  	<p class="textBold">На сколько сложная задача:</p>
+	  	  	<input type="radio" name="difficulty" value="easily" checked="checked"/>Совсем нет<br>
+	  	  	<input type="radio" name="difficulty" value="so-so"/>Так себе<br>
+	  	  	<input type="radio" name="difficulty" value="complicated"/>Еле справились
+	  	  </fieldset><br>
+	  	  <input type="submit"/>
+	  	</form>
+	  </div>
+  </body>
+</html>
